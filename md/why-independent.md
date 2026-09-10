@@ -3,6 +3,10 @@
 ## Ideas should be able to exist before they have permission.
 
 <div class="prose two-column">
-<p>Some questions fall between disciplines, product roadmaps, grant categories, and institutions. Independence lets us follow those questions across boundaries and build the experiment required to test them.</p>
-<p>We publish what can be shared, build what can be demonstrated, and prefer working systems over claims of ownership. The aim is not to own a future, but to make more of it possible.</p>
-</div>
+Some questions do not fit neatly inside a discipline, product roadmap, grant category, or institution.
+
+Independence lets us follow a question across those boundaries and build whatever experiment is necessary to test it.
+
+We publish what can be shared. We demonstrate what can be built. We prefer working systems to claims of ownership.
+
+**We dream. We build. We share.**
