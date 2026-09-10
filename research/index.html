@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI3D Foundation researches representations and interfaces through which humans and intelligence can create together." />
+  <meta name="theme-color" content="#f7f4ed" />
+  <link rel="canonical" href="https://ai3d.foundation/research/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Research — AI3D Foundation" />
+  <meta property="og:description" content="The interface should translate—not the human." />
+  <meta property="og:url" content="https://ai3d.foundation/research/" />
+  <meta property="og:image" content="https://ai3d.foundation/assets/ai3d-foundation.png" />
+  <title>Research — AI3D Foundation</title>
+  <link rel="icon" type="image/png" href="/assets/ai3d-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:opsz,wght@10..72,400;10..72,500&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="AI3D Foundation home">
+      <img src="/assets/ai3d-mark.png" alt="" width="820" height="634" />
+    </a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/research/" aria-current="page">Research</a>
+      <a href="/publications/">Publications</a>
+      <a href="/field-building/">Field building</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero-inner">
+        <p class="kicker">AI3D Foundation / Research</p>
+        <h1 id="page-title">Research</h1>
+        <p class="page-thesis">The interface should translate—not the human.</p>
+        <div class="page-intro">
+          <p>Humans express ideas through many representations: drawings, words, images, rough geometry, objects, gestures, and spatial arrangements.</p>
+          <p>AI systems often reverse that relationship. They require a person to translate an idea into whichever representation a particular model happens to accept.</p>
+          <p>AI3D researches another possibility.</p>
+          <p>We build representations and interfaces that let people work in the forms most natural to them, while the system translates those expressions into whatever representations different models require—and translates the results back into forms that remain visible, spatial, and editable.</p>
+          <p>3D is especially useful within this loop because it can persist across transformations.</p>
+          <p>It can be input, prompt, constraint, composition, intermediate representation, output, environment, and context for intelligence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="lineage-title">
+      <div class="section-rail" aria-hidden="true">I</div>
+      <div class="content-body">
+        <p class="eyebrow">Canonical works</p>
+        <h2 id="lineage-title">A Lineage of Representations</h2>
+        <p class="section-question">Each system asks a version of the same question: <strong>What translation is the human being forced to perform that the interface could perform instead?</strong></p>
+
+        <div class="lineage-list">
+          <article class="lineage-item" id="napkinmatic">
+            <div class="lineage-meta"><span>01</span><span>Drawing → computation</span></div>
+            <div class="lineage-copy">
+              <h3>Napkinmatic</h3>
+              <p class="burden">You should not have to enter the computer’s authoring environment before computation can begin.</p>
+              <p>Napkinmatic treats ordinary drawings and physical artifacts as computational interfaces. Work can begin with the representation already in front of the person rather than inside a specialized tool.</p>
+              <p class="advance">Computation moves toward the person’s existing expression.</p>
+              <div class="evidence-links"><a href="https://github.com/yosun/napkinmatic">Open-source framework <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+
+          <article class="lineage-item" id="napkinmatic-3d">
+            <div class="lineage-meta"><span>02</span><span>Drawing → 3D</span><span>2023</span></div>
+            <div class="lineage-copy">
+              <h3>Napkinmatic 3D</h3>
+              <p class="burden">You should not have to describe a drawing in another modality before it can become spatial.</p>
+              <p>A napkin, notebook, receipt, or other available surface becomes a direct bridge from human visual intuition to generated geometry.</p>
+              <p class="advance">Natural expression crosses into a spatial representation.</p>
+              <div class="evidence-links"><a href="https://doi.org/10.1145/3588430.3597253">ACM SIGGRAPH 2023 Real-Time Live! <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+
+          <article class="lineage-item" id="ai3d-desktop">
+            <div class="lineage-meta"><span>03</span><span>Representations → workspace</span><span>2024</span></div>
+            <div class="lineage-copy">
+              <h3>AI3D Desktop</h3>
+              <p class="burden">You should not have to leave the creative environment every time you switch models or representations.</p>
+              <p>AI3D Desktop combines text-to-3D, image-to-3D, 3D-to-3D, and direct spatial manipulation inside a persistent skeuomorphic XR environment. Generation becomes one operation within an ongoing workspace.</p>
+              <p class="advance">Multiple representations begin to coexist in one continuing environment.</p>
+              <div class="evidence-links">
+                <a href="https://dl.acm.org/doi/10.1145/3664294.3664363">ACM SIGGRAPH 2024 <span aria-hidden="true">↗</span></a>
+                <a href="https://cvpr.thecvf.com/virtual/2024/demonstration/32144">CVPR 2024 demonstration <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="lineage-item" id="ai3d-sculpt">
+            <div class="lineage-meta"><span>04</span><span>Spatial intent → generative 3D</span><span>2024</span></div>
+            <div class="lineage-copy">
+              <h3>AI3D Sculpt</h3>
+              <p class="burden">You should not have to translate shape into prose or a privileged 2D projection.</p>
+              <p>A rough 3D construction communicates proportion, orientation, topology, perspective, and spatial relationships directly. Shape itself becomes the prompt for generative 3D.</p>
+              <p class="advance">Spatial intent becomes a first-class input rather than only an output.</p>
+              <div class="evidence-links"><a href="https://eccv.ecva.net/virtual/2024/demonstration/2781">ECCV 2024 demonstration <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+
+          <article class="lineage-item" id="ai3d-render">
+            <div class="lineage-meta"><span>05</span><span>3D ↔ generative media</span><span>2025</span></div>
+            <div class="lineage-copy">
+              <h3>AI3D Render / Co-Create</h3>
+              <p class="burden">You should not have to describe spatial composition indirectly to image or video generators.</p>
+              <p>Scenes, cameras, composition, and animation become controls for generative image and video. Generated media returns to an iterative loop in which rough geometry and model output can inform the next creative action.</p>
+              <p class="advance">3D mediates between spatial intention and models built for other media.</p>
+              <div class="evidence-links">
+                <a href="https://doi.org/10.1145/3721260.3733979">ACM SIGGRAPH 2025 <span aria-hidden="true">↗</span></a>
+                <a href="https://cvpr.thecvf.com/Conferences/2025/BestPapersDemos">CVPR 2025 recognition <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="lineage-item" id="ai3d-canvas">
+            <div class="lineage-meta"><span>06</span><span>Spatial expression ↔ model representations ↔ editable 3D</span><span>2026</span></div>
+            <div class="lineage-copy">
+              <h3>AI3D Canvas</h3>
+              <p class="burden">You should not have to know or care which representation a particular model requires.</p>
+              <p>A person can sketch, trace, place, stretch, compose, or manipulate forms directly in space. Canvas maps that expression into the representation a model needs, then maps the result back into an editable 3D world.</p>
+              <p class="advance">Representation translation becomes infrastructure beneath the creative environment.</p>
+              <div class="evidence-links"><span>ECCV 2026 — Demonstration</span></div>
+            </div>
+          </article>
+
+          <article class="lineage-item" id="spatial-creation-agents">
+            <div class="lineage-meta"><span>07</span><span>Shared 3D → context → creation</span><span>2026</span></div>
+            <div class="lineage-copy">
+              <h3>Spatial Creation Agents</h3>
+              <p class="burden">Once translation disappears beneath the interface, intelligence can operate on the shared world itself rather than waiting for isolated prompts.</p>
+              <p>Spatial Creation Agents receive the existing world—including its geometry, objects, relationships, and composition—as context. They can create in relation to what is already there.</p>
+              <p class="advance">The system moves from translating between a human and a model to allowing both to operate within the same continuing environment.</p>
+              <div class="evidence-links"><span>ECCV 2026 — Demonstration</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section historical-section" aria-label="Future archives">
+      <div class="section-rail" aria-hidden="true">II</div>
+      <div class="content-body placeholder-grid">
+        <article class="placeholder-card">
+          <p class="eyebrow">Earlier Work</p>
+          <h2>Prior to 2020 — coming soon.</h2>
+          <p>A selection of earlier research, spatial computing systems, interactive media, and experimental interfaces is being reconstructed for the archive.</p>
+        </article>
+        <article class="placeholder-card">
+          <p class="eyebrow">Hackathons</p>
+          <h2>Coming soon.</h2>
+          <p>Selected hackathon projects, prototypes, and award-winning experiments will be documented separately.</p>
+        </article>
+      </div>
+    </section>
+
+    <nav class="related-pages" aria-label="Related pages">
+      <a href="/publications/"><span>Publications</span><span aria-hidden="true">→</span></a>
+      <a href="/field-building/"><span>Field building</span><span aria-hidden="true">→</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <a href="/" aria-label="AI3D Foundation home"><img class="footer-logo" src="/assets/ai3d-foundation.png" alt="" width="948" height="910" /></a>
+    <div class="footer-mark" aria-hidden="true">∴</div>
+    <div>We dream. We build. We share.</div>
+  </footer>
+</body>
+</html>

@@ -1,29 +1,32 @@
 # AI3D Foundation
 
-Static GitHub Pages site for `ai3d.foundation`.
+Static GitHub Pages site for [`ai3d.foundation`](https://ai3d.foundation).
 
-## Content
+## Structure
 
-The hero remains in `index.html`. The four main chapters are loaded at runtime from Markdown files in `md/`:
+The site is authored as static HTML with one shared stylesheet:
 
-- `md/what-we-mean-by-3d.md`
-- `md/research.md`
-- `md/work.md`
-- `md/why-independent.md`
+- `index.html` — homepage thesis and work areas
+- `research/index.html` — curated research lineage
+- `publications/index.html` — selected bibliographic record
+- `field-building/index.html` — community and field-building work
+- `styles.css` — shared editorial layout and responsive styles
 
-`index.html` fetches these files and renders them with Marked. GitHub Pages serves the Markdown files as ordinary static assets, so no build step is required.
+Core content is present in the delivered HTML. The site has no runtime JavaScript or client-side Markdown dependency.
 
 ## Logo
 
 The supplied square logo is preserved in `assets/` as two layout-specific crops:
 
-- `assets/ai3d-mark.png` for the masthead
-- `assets/ai3d-foundation.png` for the footer
+- `assets/ai3d-mark.png` for the masthead and favicon
+- `assets/ai3d-foundation.png` for the footer and social preview
 
 ## Local preview
 
-Because the page uses `fetch()`, preview it through a local HTTP server rather than opening `index.html` directly as a `file://` URL.
+Serve the repository root over HTTP so root-relative links behave as they do on GitHub Pages:
 
 ```bash
 python3 -m http.server 8000
 ```
+
+Then open `http://localhost:8000`.
