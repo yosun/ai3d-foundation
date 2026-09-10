@@ -1,1 +1,97 @@
-hello ai3d foundation!
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI3D Foundation explores the dimensions through which intelligence can compute." />
+  <meta name="theme-color" content="#f7f4ed" />
+  <title>AI3D Foundation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:opsz,wght@10..72,400;10..72,500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="AI3D Foundation home">
+      <img src="assets/ai3d-mark.png" alt="AI3D Foundation" />
+    </a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="#meaning">3D</a>
+      <a href="#research">Research</a>
+      <a href="#work">Work</a>
+      <a href="#independent">Independent</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <p class="kicker">AI3D Foundation</p>
+        <h1 id="hero-title">We dream. We build. We share.</h1>
+        <div class="hero-copy">
+          <p>AI3D Foundation explores the dimensions through which intelligence can compute.</p>
+          <p>We invent new representations, transformations, interactions, and systems, and build them into working experiments.</p>
+          <p class="closing">3D began with space. It doesn’t end there.</p>
+        </div>
+
+        <nav class="section-index" aria-label="Page sections">
+          <a href="#meaning"><span>What we mean by 3D</span><span aria-hidden="true">→</span></a>
+          <a href="#research"><span>Research</span><span aria-hidden="true">→</span></a>
+          <a href="#work"><span>Work</span><span aria-hidden="true">→</span></a>
+          <a href="#independent"><span>Why independent</span><span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="chapter" id="meaning">
+      <div class="chapter-number">I</div>
+      <div class="chapter-body markdown-body" data-markdown="md/what-we-mean-by-3d.md"></div>
+    </section>
+
+    <section class="chapter" id="research">
+      <div class="chapter-number">II</div>
+      <div class="chapter-body markdown-body" data-markdown="md/research.md"></div>
+    </section>
+
+    <section class="chapter" id="work">
+      <div class="chapter-number">III</div>
+      <div class="chapter-body markdown-body" data-markdown="md/work.md"></div>
+    </section>
+
+    <section class="chapter" id="independent">
+      <div class="chapter-number">IV</div>
+      <div class="chapter-body markdown-body" data-markdown="md/why-independent.md"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="footer-logo" src="assets/ai3d-foundation.png" alt="AI3D Foundation" />
+    <div class="footer-mark" aria-hidden="true">∴</div>
+    <div>We dream. We build. We share.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    marked.setOptions({ gfm: true, breaks: false });
+
+    async function loadMarkdown() {
+      const targets = document.querySelectorAll('[data-markdown]');
+      await Promise.all([...targets].map(async (target) => {
+        const path = target.dataset.markdown;
+        try {
+          const response = await fetch(path);
+          if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+          const source = await response.text();
+          target.innerHTML = marked.parse(source);
+        } catch (error) {
+          console.error(`Could not load ${path}`, error);
+          target.innerHTML = '<p class="load-error">This section could not be loaded.</p>';
+        }
+      }));
+    }
+
+    loadMarkdown();
+  </script>
+</body>
+</html>
