@@ -34,14 +34,24 @@ Much of this work takes the form of working systems.
 ## Selected Research
 
 ### AI3D Canvas with Spatial Creation Agents
-**Space → AI → Space**  
+**Freeform Space ↔ AI Representation ↔ 3D**  
 *2026*
 
-AI3D Canvas explores agents that create within spatial context.
+AI3D Canvas lets humans create directly in freeform space, without first translating their ideas into the particular representation required by an AI model.
 
-A Spatial Creation Agent receives a scan or spatial model of a room and uses that context to determine what to create, where to place it, and how it should relate to the existing environment.
+A person can sketch, trace, place, stretch, compose, or otherwise manipulate forms spatially. AI3D Canvas maps that spatial expression into whatever representation a model needs, then maps the model's output back into an editable 3D world.
 
-Rather than generating isolated assets, the agent participates in the composition of a shared spatial world.
+The human works in space.
+
+The machinery of representation happens underneath.
+
+This makes the canvas a translation layer between human spatial expression and heterogeneous AI models rather than an interface built around any single model, modality, or generation pipeline.
+
+**Spatial Creation Agents** extend this idea further.
+
+An agent can receive the spatial world itself as context: its geometry, objects, relationships, and existing composition. It can then reason about that space and create within it — deciding what to add, where it belongs, how it relates to what already exists, and how its creation should transform the environment.
+
+The progression is from **AI as generator**, to **3D as an interface to AI**, to **AI as a participant in a shared spatial creation environment**.
 
 **ECCV 2026 — Demonstration**
 
