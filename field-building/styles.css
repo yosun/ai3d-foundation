@@ -1,0 +1,156 @@
+.field-building-page .hggi-hero {
+  padding-bottom: clamp(7rem, 13vw, 11rem);
+}
+
+.field-building-page .hggi-hero h1 {
+  max-width: 12ch;
+  font-size: clamp(3.9rem, 9.4vw, 8.4rem);
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+.field-building-page .page-thesis {
+  max-width: 30ch;
+}
+
+.field-building-page .hero-question {
+  max-width: 48rem;
+  margin: clamp(4rem, 8vw, 7rem) 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ink);
+  font-size: clamp(1.8rem, 3.8vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -.03em;
+  text-wrap: balance;
+}
+
+.field-building-page .section-index {
+  width: min(100%, var(--reading-measure));
+}
+
+.field-building-page .editorial-prose {
+  max-width: var(--reading-measure);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.58;
+}
+
+.field-building-page .editorial-prose > p {
+  margin: 0 0 1.35em;
+}
+
+.field-building-page .editorial-prose > p:last-child {
+  margin-bottom: 0;
+}
+
+.field-building-page .editorial-prose a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: .16em;
+}
+
+.field-building-page .action-lexicon {
+  max-width: 38rem;
+  margin: clamp(2.5rem, 5vw, 4rem) 0 !important;
+  font-size: clamp(1.7rem, 3.2vw, 2.65rem);
+  line-height: 1.16;
+  letter-spacing: -.025em;
+}
+
+.field-building-page .interface-principle {
+  margin-top: clamp(2.5rem, 5vw, 4rem) !important;
+  font-size: clamp(1.55rem, 2.8vw, 2.25rem);
+  line-height: 1.22;
+  font-style: italic;
+}
+
+.field-building-page .translation-loop {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.25fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(.75rem, 2vw, 1.5rem);
+  max-width: 58rem;
+  margin: clamp(3rem, 6vw, 5rem) 0 !important;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: clamp(.78rem, 1.5vw, 1rem);
+  line-height: 1.45;
+  letter-spacing: .02em;
+  text-align: center;
+}
+
+.field-building-page .translation-loop span:nth-child(even) {
+  color: var(--quiet);
+  font-size: 1.35em;
+}
+
+.field-building-page .field-question {
+  max-width: 43rem;
+  margin: clamp(3rem, 6vw, 5rem) 0;
+  font-size: clamp(1.65rem, 3.2vw, 2.55rem);
+  line-height: 1.2;
+  letter-spacing: -.025em;
+  font-style: italic;
+  text-wrap: balance;
+}
+
+.field-building-page .field-actions {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  border-top: 1px solid var(--ink);
+}
+
+.field-building-page .field-actions p {
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr);
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.field-building-page .field-actions p::before {
+  color: var(--quiet);
+  content: "→";
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .78rem;
+  padding-top: .32rem;
+}
+
+.field-building-page .practice-section {
+  padding-bottom: clamp(7rem, 12vw, 10rem);
+}
+
+.field-building-page .field-venue {
+  margin-top: -.4rem;
+  color: var(--quiet);
+  font-style: italic;
+}
+
+.field-building-page .closing-section {
+  padding-top: clamp(6rem, 11vw, 9rem);
+}
+
+.field-building-page .closing-section .content-body > h2 {
+  max-width: 11ch;
+}
+
+.field-building-page .closing-prose {
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .field-building-page .hggi-hero h1 {
+    max-width: 100%;
+    font-size: clamp(3.35rem, 16vw, 5.5rem);
+  }
+
+  .field-building-page .translation-loop {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .field-building-page .translation-loop span:nth-child(even) {
+    transform: rotate(90deg);
+  }
+}

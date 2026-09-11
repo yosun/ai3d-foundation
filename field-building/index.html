@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="AI3D Foundation field-building work across research gatherings, practical labs, and shared infrastructure." />
+  <meta name="description" content="Human-Guided Generative Interfaces studies how people can directly shape generative processes across changing computational representations." />
   <meta name="theme-color" content="#f7f4ed" />
   <link rel="canonical" href="https://ai3d.foundation/field-building/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Field Building — AI3D Foundation" />
-  <meta property="og:description" content="Building the conditions through which AI-for-3D research can be shared and developed." />
+  <meta property="og:title" content="Human-Guided Generative Interfaces — AI3D Foundation" />
+  <meta property="og:description" content="An emerging field for interfaces through which humans directly shape generative processes." />
   <meta property="og:url" content="https://ai3d.foundation/field-building/" />
   <meta property="og:image" content="https://ai3d.foundation/assets/ai3d-foundation.png" />
-  <title>Field Building — AI3D Foundation</title>
+  <title>Human-Guided Generative Interfaces — AI3D Foundation</title>
   <link rel="icon" type="image/png" href="/assets/ai3d-mark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:opsz,wght@10..72,400;10..72,500&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/field-building/styles.css" />
 </head>
-<body>
+<body class="field-building-page">
   <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="site-header">
@@ -34,41 +35,143 @@
   </header>
 
   <main id="content">
-    <section class="page-hero compact-page-hero" aria-labelledby="page-title">
+    <section class="page-hero hggi-hero" aria-labelledby="page-title">
       <div class="page-hero-inner">
         <p class="kicker">AI3D Foundation / Field Building</p>
-        <h1 id="page-title">Field Building</h1>
-        <p class="page-thesis">Research does not happen only through papers.</p>
+        <h1 id="page-title">Human-Guided Generative Interfaces</h1>
+        <p class="page-thesis">HGGI is the study of interfaces through which humans directly shape generative processes.</p>
         <div class="page-intro">
-          <p>AI3D Foundation works on the conditions through which AI-for-3D research can be shared, compared, reproduced, and developed.</p>
+          <p>Generative AI is increasingly capable of producing images, objects, environments, software, and worlds.</p>
+          <p>But much of its interface has converged on a surprisingly narrow interaction: describe what you want, generate a result, and try again.</p>
+          <p>This leaves a large space unexplored.</p>
+        </div>
+        <p class="hero-question">What happens when generation becomes something we can directly manipulate?</p>
+
+        <nav class="section-index" aria-label="On this page">
+          <a href="#interaction"><span>From prompting to interaction</span><span aria-hidden="true">→</span></a>
+          <a href="#translation"><span>Representation translation</span><span aria-hidden="true">→</span></a>
+          <a href="#why-3d"><span>Why 3D?</span><span aria-hidden="true">→</span></a>
+          <a href="#building"><span>Building the field</span><span aria-hidden="true">→</span></a>
+          <a href="#practice"><span>Field-building in practice</span><span aria-hidden="true">→</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="content-section" id="interaction" aria-labelledby="interaction-title">
+      <div class="section-rail" aria-hidden="true">I</div>
+      <div class="content-body">
+        <p class="eyebrow">Interaction</p>
+        <h2 id="interaction-title">From prompting to interaction</h2>
+        <div class="editorial-prose">
+          <p>A prompt communicates intent by translating it into language.</p>
+          <p>But human intent is not inherently linguistic.</p>
+          <p class="action-lexicon">We point. Draw. Move. Stretch. Arrange. Demonstrate. Compare. Navigate. Act in space.</p>
+          <p>We understand relationships that may be cumbersome—or impossible—to specify completely in words.</p>
+          <p>HGGI asks how those forms of expression can become first-class inputs to generative systems.</p>
+          <p>The objective is not simply to give humans more controls around a model. It is to construct representations in which human action and machine generation can operate on the same evolving object.</p>
+          <p class="interface-principle">The interface becomes part of the computation.</p>
         </div>
       </div>
     </section>
 
-    <section class="content-section" aria-labelledby="work-title">
-      <div class="section-rail" aria-hidden="true">I</div>
+    <section class="content-section" id="translation" aria-labelledby="translation-title">
+      <div class="section-rail" aria-hidden="true">II</div>
       <div class="content-body">
-        <p class="eyebrow">Shared practice</p>
-        <h2 id="work-title">Gather, teach, and build in public.</h2>
+        <p class="eyebrow">Shared representations</p>
+        <h2 id="translation-title">Representation translation</h2>
+        <div class="editorial-prose">
+          <p>Different models understand the world through different representations. Humans have representations of our own.</p>
+          <p>A central problem of HGGI is therefore representation translation:</p>
+          <p class="translation-loop" aria-label="Human expression, bidirectionally connected to model representations, bidirectionally connected to an editable result">
+            <span>Human expression</span>
+            <span aria-hidden="true">↔</span>
+            <span>Model representations</span>
+            <span aria-hidden="true">↔</span>
+            <span>Editable result</span>
+          </p>
+          <p>The human should not have to understand the internal representation required by every model in a pipeline.</p>
+          <p class="interface-principle">The interface should translate.</p>
+          <p>This changes the role of generative AI from a system that interprets instructions and returns artifacts into a medium that can be continuously acted upon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="why-3d" aria-labelledby="why-3d-title">
+      <div class="section-rail" aria-hidden="true">III</div>
+      <div class="content-body">
+        <p class="eyebrow">Experimental ground</p>
+        <h2 id="why-3d-title">Why 3D?</h2>
+        <div class="editorial-prose">
+          <p>3D makes this problem unusually visible.</p>
+          <p>A spatial object can simultaneously have geometry, appearance, semantics, parts, views, physical relationships, and latent representations. A person may want to manipulate any of these without knowing which representation a particular model requires.</p>
+          <p>This makes 3D a useful experimental ground for a broader question:</p>
+          <p class="section-question field-question">How can people manipulate meaning across changing computational representations without having to perform the translation themselves?</p>
+          <p>Our work in generative 3D, spatial interfaces, and <a href="/research/#ai3d-canvas">AI3D Canvas</a> explores this question through working systems.</p>
+          <p>But HGGI is not limited to 3D.</p>
+          <p>The same problem appears wherever generative systems mediate between human intention and computational representation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="building" aria-labelledby="building-title">
+      <div class="section-rail" aria-hidden="true">IV</div>
+      <div class="content-body">
+        <p class="eyebrow">An emerging area of inquiry</p>
+        <h2 id="building-title">Building the field</h2>
+        <div class="editorial-prose">
+          <p>We use Human-Guided Generative Interfaces as a name for this emerging area of inquiry.</p>
+          <p>It intersects human-computer interaction, computer graphics, artificial intelligence, spatial computing, and creative tools, but is not reducible to any one of them.</p>
+          <div class="field-actions" aria-label="How we build the field">
+            <p>We build systems.</p>
+            <p>We publish and present what we learn.</p>
+            <p>We create spaces for researchers and practitioners working on related problems to find one another.</p>
+            <p>And we share the ideas so that the field can develop beyond any single project, laboratory, company, or model.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section practice-section" id="practice" aria-labelledby="practice-title">
+      <div class="section-rail" aria-hidden="true">V</div>
+      <div class="content-body">
+        <p class="eyebrow">Gatherings and labs</p>
+        <h2 id="practice-title">Field-building in practice</h2>
 
         <div class="field-list">
-          <article class="field-item">
+          <article class="field-item" id="ai-for-3d-sig">
             <div class="lineage-meta"><span>01</span><span>Community</span></div>
             <div>
               <h3>AI for 3D Special Interest Group</h3>
-              <p>An ongoing gathering at ACM SIGGRAPH connecting researchers, artists, developers, and practitioners working across generative AI and 3D.</p>
+              <p class="field-venue">ACM SIGGRAPH</p>
+              <p>A gathering around the emerging intersection of generative AI and 3D representation, creation, and interaction.</p>
               <div class="evidence-links"><a href="https://www.siggraph.org/about/">About ACM SIGGRAPH <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
 
-          <article class="field-item">
+          <article class="field-item" id="sota-generative-ai-pipelines">
             <div class="lineage-meta"><span>02</span><span>Hands-on lab</span><span>2025</span></div>
             <div>
               <h3>Implementing SOTA Generative AI Pipelines in Your 3D Application</h3>
-              <p>A hands-on ACM SIGGRAPH 2025 Lab exploring practical integration of contemporary generative models into interactive 3D systems.</p>
-              <div class="evidence-links"><a href="https://doi.org/10.1145/3721251.3734070">Publication <span aria-hidden="true">↗</span></a></div>
+              <p class="field-venue">ACM SIGGRAPH 2025 — Hands-on Lab</p>
+              <p>A practical exploration of connecting contemporary generative models to interactive 3D systems.</p>
+              <div class="evidence-links">
+                <a href="/publications/#sota-generative-ai-pipelines">Publication record <span aria-hidden="true">→</span></a>
+                <a href="https://doi.org/10.1145/3721251.3734070">DOI <span aria-hidden="true">↗</span></a>
+              </div>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section closing-section" aria-labelledby="closing-title">
+      <div class="section-rail" aria-hidden="true">∴</div>
+      <div class="content-body">
+        <p class="eyebrow">A field begins</p>
+        <h2 id="closing-title">We dream. We build. We share.</h2>
+        <div class="editorial-prose closing-prose">
+          <p>A field does not need to begin with permission.</p>
+          <p>Sometimes it begins by giving a recurring problem a name, building the systems that make it visible, and sharing enough of the work that other people can build somewhere you did not anticipate.</p>
         </div>
       </div>
     </section>
